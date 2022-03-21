@@ -1,0 +1,85 @@
+/* Header Styling */
+header {
+  background: url(https://psd.hackeryou.com/assignment1-assets/arora/asset-3.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+}
+
+/* Navigations */
+
+.mobileMenu {
+  display: none;
+}
+
+.home li {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.home a {
+  color: #FABA63;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 15px 20px;
+  line-height: 29px;
+}
+
+.home a:hover,
+.home a:focus {
+  color: #14171F;
+  background: #FABA63;
+}
+
+.home ul:first-child {
+  margin-left: 8%;
+}
+
+/* Company name */
+.h1Container {
+  text-align: right;
+  width: 40%;
+}
+
+h1 {
+  color: #FABA63;
+  font-weight: 300;
+  font-size: 4.5rem;
+}
+
+.nameStart,
+.nameEnd {
+  color: #FFF;
+  text-transform: uppercase;
+  display: block;
+  font-family: 'Italiana', serif;
+  font-size: 16.2rem;
+}
+
+.nameStart::before,
+.nameStart::after {
+  content: '-';
+}
+
+/* Social Media links */
+.socialMedia {
+  text-align: center;
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+.socialMedia i {
+  color: #FFF;
+  padding: 10px 5px;
+  transform: scale(1.3);
+  transition: all 0.2s ease;
+}
+
+.socialMedia i:hover,
+.socialMedia i:focus {
+  transform: scale(1.6);
+}
+
+.socialMedia ul:last-child {
+  margin-bottom: 20px;
+}
