@@ -3,42 +3,20 @@ section:nth-child(odd) {
   background: $dkBlue;
 }
 
-h2 {
-  font-family: $italiana;
-  font-size: 5.1rem;
-  text-transform: uppercase;
-}
-
-.readMore {
-  text-decoration: none;
-  font-family: $italiana;
-  font-size: 2.5rem;
-  color: $white;
-  border: 2px solid $apricot;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.readMore:hover, 
-.readMore:focus {
-  border: 3px solid $white;
-  color: $apricot;
-}
-
 .mobileImage {
   display: none;
 }
 
-.blogP {
+.styledPara {
+  font-size: 1.7rem;
   line-height: 29px;
   margin: 2% 0 6% 0;
 }
 
 
-
 /* About/HandCrafted */
 .about {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .about .flexContainer {
@@ -73,7 +51,7 @@ h2 {
 
 /* Latest Collection */
 .latest {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .latest .wrapper {
@@ -83,7 +61,7 @@ h2 {
 }
 
 .latest h2 {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .collectionContainer {
@@ -138,7 +116,7 @@ h2 {
 .iconContainer h3 {
   color: $white;
   font-family: $italiana;
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
 }
 
@@ -164,7 +142,7 @@ h2 {
 }
 
 .blogText {
-  padding: 50px 140px;
+  padding: 50px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;

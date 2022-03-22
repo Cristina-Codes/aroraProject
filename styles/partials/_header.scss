@@ -7,53 +7,84 @@ header {
 }
 
 /* Navigations */
-
-.mobileMenu {
+.mobileMenuIcon {
   display: none;
 }
 
+//general link styling
 .home li {
   display: inline-block;
-  margin-top: 20px;
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 15px 20px;
+    line-height: 29px;
+  }
 }
 
-.home a {
-  color: #FABA63;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 15px 20px;
-  line-height: 29px;
+//styling the desktop and mobile navs
+.home {
+  .desktopNavHeader{
+    padding: 15px 20px;
+    margin-left: 8%;
+    a {
+      color: $apricot;
+      &:hover,
+      &:focus {
+        color: $black;
+        background: $apricot;
+      }
+    }
+  }
+  .mobileNavHeader {
+    background: $apricot;
+    padding: 15px 20px;
+    display: none;
+    li {
+      margin-top: 0;
+    }
+    a {
+      color: $black;
+      &:hover,
+      &:focus {
+        color: $apricot;
+        background: $black;
+      }
+    }
+  }
 }
 
-.home a:hover,
-.home a:focus {
-  color: #14171F;
-  background: #FABA63;
-}
 
-.home ul:first-child {
-  margin-left: 8%;
+// .headerFlex
+.headerFlex {
+  display: flex;
+  height: 100%;
 }
 
 /* Company name */
 .h1Container {
   text-align: right;
-  width: 40%;
+  width: 45%;
 }
 
 h1 {
-  color: #FABA63;
+  color: $apricot;
   font-weight: 300;
   font-size: 4.5rem;
+  padding-top: 15%;
 }
 
 .nameStart,
 .nameEnd {
-  color: #FFF;
+  color: $white;
   text-transform: uppercase;
   display: block;
-  font-family: 'Italiana', serif;
+  font-family: $italiana;
   font-size: 16.2rem;
+}
+
+.nameEnd {
+  margin-top: -50px;
 }
 
 .nameStart::before,
@@ -65,11 +96,14 @@ h1 {
 .socialMedia {
   text-align: center;
   align-self: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   margin-right: 30px;
 }
 
 .socialMedia i {
-  color: #FFF;
+  color: $white;
   padding: 10px 5px;
   transform: scale(1.3);
   transition: all 0.2s ease;

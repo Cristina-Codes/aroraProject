@@ -37,3 +37,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+h2 {
+  font-family: $italiana;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+//read more link buttons
+.readMore {
+  text-decoration: none;
+  font-family: $italiana;
+  font-size: 2.3rem;
+  color: $white;
+  border: 2px solid $apricot;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.readMore:hover, 
+.readMore:focus {
+  border: 2px solid $white;
+  color: $apricot;
+}
