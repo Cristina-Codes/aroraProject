@@ -53,10 +53,10 @@ h2 {
   border: 2px solid $apricot;
   padding: 10px;
   text-transform: uppercase;
+  &:hover, 
+  &:focus {
+    border: 2px solid $white;
+    color: $apricot;
+  }
 }
 
-.readMore:hover, 
-.readMore:focus {
-  border: 2px solid $white;
-  color: $apricot;
-}

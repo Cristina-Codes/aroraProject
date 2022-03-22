@@ -290,9 +290,7 @@ h2 {
   padding: 10px;
   text-transform: uppercase;
 }
-
-.readMore:hover,
-.readMore:focus {
+.readMore:hover, .readMore:focus {
   border: 2px solid #fff;
   color: #FABA63;
 }
@@ -359,8 +357,7 @@ header {
   text-align: right;
   width: 45%;
 }
-
-h1 {
+.h1Container h1 {
   color: #FABA63;
   font-weight: 300;
   font-size: 4.5rem;
@@ -395,7 +392,6 @@ h1 {
   bottom: 0;
   margin-right: 30px;
 }
-
 .socialMedia i {
   color: #fff;
   padding: 10px 5px;
@@ -404,9 +400,7 @@ h1 {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
-.socialMedia i:hover,
-.socialMedia i:focus {
+.socialMedia i:hover, .socialMedia i:focus {
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
 }
@@ -434,7 +428,6 @@ section:nth-child(odd) {
 .about {
   padding: 70px 0;
 }
-
 .about .flexContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -455,7 +448,6 @@ section:nth-child(odd) {
   width: calc(35% - 35px);
   margin-right: 35px;
 }
-
 .imgContainer img {
   width: 100%;
 }
@@ -479,7 +471,6 @@ section:nth-child(odd) {
 .latest {
   padding: 70px 0;
 }
-
 .latest .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +483,6 @@ section:nth-child(odd) {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .latest h2 {
   margin-bottom: 5%;
 }
@@ -505,13 +495,11 @@ section:nth-child(odd) {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .collectionContainer a {
   width: calc(33% - 20px);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .collectionContainer a:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -521,7 +509,6 @@ section:nth-child(odd) {
 .icons {
   padding: 80px 0;
 }
-
 .icons .flexContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -540,17 +527,13 @@ section:nth-child(odd) {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-.iconContainer:hover,
-.iconContainer:focus {
+.iconContainer:hover, .iconContainer:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-
 .iconContainer a {
   text-decoration: none;
 }
-
 .iconContainer i {
   color: #FABA63;
   padding: 20px;
@@ -558,7 +541,6 @@ section:nth-child(odd) {
   -webkit-transform: scale(3);
           transform: scale(3);
 }
-
 .iconContainer h3 {
   color: #fff;
   font-family: "Italiana", serif;
@@ -606,7 +588,7 @@ section:nth-child(odd) {
 
 /* Contact Information */
 section:last-of-type {
-  height: 65vh;
+  padding: 100px 0;
 }
 
 .contact {
@@ -621,6 +603,13 @@ section:last-of-type {
       -ms-flex-align: center;
           align-items: center;
 }
+.contact h3 {
+  padding: 10px 0;
+  font-size: 2.5rem;
+}
+.contact li {
+  margin-bottom: 5px;
+}
 
 .bottomNav {
   width: 23%;
@@ -628,6 +617,7 @@ section:last-of-type {
 
 .contactInfo {
   width: 27%;
+  text-align: right;
 }
 
 .contact h3,
@@ -635,15 +625,6 @@ section:last-of-type {
 form button {
   font-family: "Italiana", serif;
   text-transform: uppercase;
-}
-
-.contact h3 {
-  padding: 10px 0;
-  font-size: 2.5rem;
-}
-
-.contact li {
-  margin-bottom: 5px;
 }
 
 /* bottomNav, subscribe, contactInfo */
@@ -706,24 +687,16 @@ form button {
   width: 30%;
 }
 
-.contactInfo {
-  text-align: right;
-}
-
-/* Footer */
 footer {
   text-align: center;
   background: #000;
   padding: 8px 0;
 }
-
 footer a {
   color: #fff;
   text-decoration: none;
 }
-
-footer a:hover,
-footer a:focus {
+footer a:hover, footer a:focus {
   text-decoration: underline;
 }
 
