@@ -160,6 +160,7 @@ section:last-of-type {
 
 .contactInfo {
   width: 27%;
+  min-width: 307px;
   text-align: right;
 }
 
@@ -171,10 +172,6 @@ form button {
 }
 
 /* bottomNav, subscribe, contactInfo */
-.mobileNav {
-  display: none;
-}
-
 .bottomNav a {
   text-decoration: none;
   color: $white;

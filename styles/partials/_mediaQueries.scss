@@ -1,258 +1,220 @@
 /* Media Queries */
-@media (max-width: 800px) {
-  html {
-    font-size: 40%;
-  }
-  
-  header {
-    background: url(https://psd.hackeryou.com/assignment1-assets/arora/asset-2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-  
-  .home a {
-    font-size: 2.5rem;
-  }
-  
-/*  Main  */
-  .about .flexContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .textContainer {
-    font-size: 2.4rem;
-    width: 100%;
-  }
-  
-  .imgContainer {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  
-  .imgContainer .mobileImage {
-    display: block;
-  }
-  
-  .imgContainer .desktopImage {
-    display: none;
-  }
-  
-  .imgContainer img {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .blogText {
-    padding: 0 5px;
-  }
-  
-  section:last-of-type {
-    height: 50vh;
-  }
-  
-  .bottomNav {
-    width: 20%;
-  }
-  
+@media (max-width: 965px){ 
+  .contact 
   .contactInfo {
-    width: 30%;
+    min-width: 250px;
+  }
+  .bottomNav {
+    width: 10%;
+  }
+  li {
+    font-size: 1.6rem;
   }
 }
 
-// @media (max-width: 480px) {
-//   html {
-//     font-size: 30%;
-//   }
+
+@media (max-width: 800px) {
+  header {
+    background: url('https://psd.hackeryou.com/assignment1-assets/arora/asset-2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    .h1Container {
+      width: 65%;
+    }
+  }
+
   
-//   .mobileMenu {
-//     display: block;
-//     text-align: right;
-//     padding: 25px 15px;
-//   }
+/*  Main  */
+  .styledPara {
+    font-size: 1.5rem;
+  }
+
+  .icons .flexContainer {
+    justify-content: space-between;
+  }
+
+  .iconContainer {
+    min-width: 10px;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .blog {
+    padding-bottom: 30px;
+  }
+
+  .blogImg {
+    height: 50%;
+    margin: auto 0;
+  }
+
+  .blogText {
+    padding: 30px 40px;
+  }
+
+  .contact {
+    flex-direction: column;
+    .bottomNav {
+      width: 100%;
+      padding-bottom: 30px;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 20px;
+        a {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    .subscribe {
+      width: 100%;
+      padding-bottom: 30px;
+      form {
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+    .contactInfo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  section:last-of-type {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .desktopNavHeader {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+    margin: 15px;
+  }
   
-//   .mobileMenu i {
-//     transform: scale(3, 2);
-//   }
+  .mobileMenuIcon i:hover,
+  .mobileMenuIcon i:focus {
+    color: $apricot;
+  }
   
-//   .mobileMenu i:hover,
-//   .mobileMenu i:focus {
-//     color: $apricot;
-//   }
+  header .h1Container {
+    margin-top: 200px;
+    height: 60%;
+    width: 60%;
+    .nameStart,
+    .nameEnd {
+      font-size: 8rem;
+      line-height: 140px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .socialMedia {
+    display: none;
+  }
+
   
-//   .home {
-//     display: none;
-//   }
+/*  Main  */
+  .styledPara {
+    // font-size: 1.2rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3.3rem;
+  }
   
-//   .h1Container {
-//     width: 40%;
-//   }
+  .about .flexContainer {
+    flex-direction: column;
+    .imgContainer {
+      width: 100%;
+    }
+    .textContainer {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+
+  .blogDiv {
+    margin: 10px auto;
+    .readMore {
+      font-size: 2rem;
+    }
+  }
+
+/*  Gallery  */
+  .latest {
+    padding: 40px 0;
+    .collectionContainer {
+      flex-direction: column;
+      a {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
   
-//   .socialMedia {
-//     visibility: hidden;
-//   }
+/*  Icons  */
+  .icons .flexContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    li {
+      margin: 50px 0;
+    }
+  }
+
+/*  Blog  */
+  .blogEntry,
+  .blogEntry:last-of-type {
+    flex-direction: column-reverse;
+    .blogImg {
+      width: 100%;
+    }
+    .blogText {
+      width: 100%;
+    }
+  }
+
+/*  Contact  */
+  .contact {
+    .bottomNav ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      li {
+        width: calc(50% - 50px);
+        a {
+          padding: 15px;
+        }
+      }
+    }
+  }
   
-// /*  Main  */
-//   h2 {
-//     text-align: center;
-//     font-size: 5rem;
-//   }
+  .submitContainer {
+    flex-direction: column;
+  }
+
+  .contact .subscribe form {
+    width: 100%;
+    margin-bottom: 50px;
+    input,
+    button {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
   
-//   .readMore {
-//     margin: 0 auto;
-//     font-size: 4.5rem;
-//   }
-  
-// /*  about  */
-//   .about {
-//     height: 120vh;
-//   }
-  
-//   .imgContainer {
-//     height: auto;
-//     padding-bottom: 20px;
-//   }
-  
-//   .imgContainer .mobileImage {
-//     display: block;
-//     margin: 10px auto;
-//     width: 100%;
-//   }
-  
-//   .desktopImage {
-//     display: none;
-//   }
-  
-//   .textContainer {
-//     margin-top: 20px;
-//   }
-  
-// /*  about/blog  */
-//   .blogP {
-//     font-size: 4.2rem;
-//   }
-  
-//   .blogDiv {
-//     display: flex;
-//     justify-content: center;
-//   }
-  
-// /*  gallery  */
-//   .latest {
-//     height: 40vh;
-//     padding: 40px 0;
-//   }
-  
-//   .collectionContainer a {
-//     width: calc(50% - 10px);
-//   }
-  
-//   .collectionContainer a:last-child {
-//     display: none;
-//   }
-  
-//   .latest img {
-//     width: 100%;
-//   }
-  
-// /*  icons  */
-//   .icons {
-//     height: 55vh;
-//   }
-  
-//   .icons .flexContainer {
-//     flex-direction: column;
-//     justify-content: space-evenly;
-//   }
-  
-//   .iconContainer i {
-//     padding: 0;
-//     padding-bottom: 8px;
-//     transform: scale(5);
-//   }
-  
-//   .iconContainer h3 {
-//     font-size: 5rem;
-//     padding-top: 10px;
-//   }
-  
-// /*  blog  */
-//   .mobileImage {
-//     display: block;
-//   }
-  
-//   .blog .blogEntry {
-//     flex-direction: column-reverse;
-//   }
-  
-//   .blogText, .blogImg {
-//     width: 100%;
-//   }
-  
-//   .blogText {
-//     padding: 50px 15px;
-//   }
-  
-//   .blogP {
-//     margin: 6% 0 15% 0;
-//   }
-  
-// /*  contact  */
-//   .section:last-of-type {
-//     height: 60vh;
-//   }
-  
-//   .contact {
-//     flex-direction: column;
-//   }
-  
-//   .contact h3 {
-//     font-size: 4rem;
-//   }
-  
-//   .desktopNav {
-//     display: none;
-//   }
-  
-//   .mobileNav {
-//     display: block;
-//   }
-  
-//   .mobileNav ul {
-//     padding: 35px;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-  
-//   .mobileNav li {
-//     display: inline-block;
-//     font-size: 4rem;
-//   }
-  
-//   .mobileNav a {
-//     text-transform: none;
-//     font-family: $lato;
-//   }
-  
-//   .bottomNav,
-//   .subscribe,
-//   .contactInfo {
-//     width: 100%;
-//   }
-  
-//   .subscribe p:nth-child(2) {
-//     font-size: 3rem;
-//   }
-  
-//   .submitContainer {
-//     flex-direction: column;
-//   }
-  
-//   form {
-//     width: 100%;
-//   }
   
 //   form input,
 //   form button {
@@ -272,4 +234,4 @@
 //     font-size: 2.7rem;
 //   }
   
-// }
+}
