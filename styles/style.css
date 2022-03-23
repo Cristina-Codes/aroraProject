@@ -307,6 +307,9 @@ header {
 .mobileMenuIcon {
   display: none;
 }
+.mobileMenuIcon i {
+  padding: 10px;
+}
 
 .home li {
   display: inline-block;
@@ -331,10 +334,9 @@ header {
 }
 .home .mobileNavHeader {
   background: #FABA63;
-  display: none;
   width: 30%;
-  position: absolute;
-  top: 40px;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
 .home .mobileNavHeader li {
   margin-top: 0;
@@ -348,6 +350,18 @@ header {
 .home .mobileNavHeader a:hover, .home .mobileNavHeader a:focus {
   color: #FABA63;
   background: #201E21;
+}
+
+.hidden {
+  position: fixed;
+  left: -150px;
+  top: 50px;
+}
+
+.showMe {
+  position: absolute;
+  left: 0px;
+  top: 50px;
 }
 
 .headerFlex {
