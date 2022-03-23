@@ -38,13 +38,18 @@ header {
   }
   .mobileNavHeader {
     background: $apricot;
-    padding: 15px 20px;
     display: none;
+    width: 30%;
+    position: absolute;
+    top: 40px;
     li {
       margin-top: 0;
+      display: block;
+      padding: 20px 10px;
     }
     a {
       color: $black;
+      padding: 10px;
       &:hover,
       &:focus {
         color: $apricot;
