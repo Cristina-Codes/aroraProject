@@ -305,7 +305,7 @@ header {
 
 /* Navigations */
 .mobileMenuIcon {
-  display: none;
+  margin: 15px;
 }
 .mobileMenuIcon i {
   padding: 10px;
@@ -332,11 +332,16 @@ header {
   color: #201E21;
   background: #FABA63;
 }
+.home .mobileContainer {
+  display: none;
+}
 .home .mobileNavHeader {
   background: #FABA63;
   width: 30%;
-  -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+  min-width: 100px;
+  max-width: 135px;
+  -webkit-transition: all 0.65s ease-out;
+  transition: all 0.65s ease-out;
 }
 .home .mobileNavHeader li {
   margin-top: 0;
@@ -354,7 +359,7 @@ header {
 
 .hidden {
   position: fixed;
-  left: -150px;
+  left: -300px;
   top: 50px;
 }
 
@@ -813,13 +818,8 @@ footer a:hover, footer a:focus {
     display: none;
   }
 
-  .home .mobileNavHeader {
+  .home .mobileContainer {
     display: block;
-  }
-
-  .mobileMenuIcon {
-    display: block;
-    margin: 15px;
   }
 
   .mobileMenuIcon i:hover,

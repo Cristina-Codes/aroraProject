@@ -8,7 +8,7 @@ header {
 
 /* Navigations */
 .mobileMenuIcon {
-  display: none;
+  margin: 15px;
   i {
     padding: 10px;
   }
@@ -39,10 +39,15 @@ header {
       }
     }
   }
+  .mobileContainer {
+    display: none;
+  }
   .mobileNavHeader {
     background: $apricot;
     width: 30%;
-    transition: all 0.45s ease;
+    min-width: 100px;
+    max-width: 135px;
+    transition: all 0.65s ease-out;
     li {
       margin-top: 0;
       display: block;
@@ -62,7 +67,7 @@ header {
 
 .hidden {
   position: fixed;
-  left: -150px;
+  left: -300px;
   top: 50px;
 }
 
