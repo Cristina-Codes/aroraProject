@@ -13,7 +13,6 @@ section:nth-child(odd) {
   margin: 2% 0 6% 0;
 }
 
-
 /* About/HandCrafted */
 .about {
   padding: 70px 0;
@@ -45,8 +44,6 @@ section:nth-child(odd) {
   line-height: 29px;
 }
 
-
-
 /* Latest Collection */
 .latest {
   padding: 70px 0;
@@ -71,7 +68,6 @@ section:nth-child(odd) {
     }
   }
 }
-
 
 /* Icons */
 .icons {
@@ -107,7 +103,6 @@ section:nth-child(odd) {
     text-transform: uppercase;
   }
 }
-
 
 /* Blog */
 .blogEntry {
@@ -179,7 +174,7 @@ form button {
 
 .bottomNav a:hover,
 .bottomNav a:focus,
-form button:hover, 
+form button:hover,
 form button:focus {
   color: $apricot;
 }
@@ -201,7 +196,7 @@ form {
   width: 100%;
 }
 
-form input, 
+form input,
 form button {
   margin: 0;
   padding: 10px;
@@ -216,6 +211,20 @@ form input {
 
 form button {
   background: #000;
-  color: $white; 
+  color: $white;
   width: 30%;
+}
+
+/* Design Page */
+main.designs {
+  background: antiquewhite;
+}
+
+main.designs div {
+  display: flex;
+  padding: 20px;
+}
+
+main.designs a {
+  margin: 20px;
 }

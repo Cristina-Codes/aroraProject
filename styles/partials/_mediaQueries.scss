@@ -1,7 +1,6 @@
 /* Media Queries */
-@media (max-width: 965px){ 
-  .contact 
-  .contactInfo {
+@media (max-width: 965px) {
+  .contact .contactInfo {
     min-width: 250px;
   }
   .bottomNav {
@@ -12,10 +11,9 @@
   }
 }
 
-
 @media (max-width: 800px) {
   header {
-    background: url('../assets/asset-2.jpg');
+    background: url("../assets/asset-2.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -24,8 +22,7 @@
     }
   }
 
-  
-/*  Main  */
+  /*  Main  */
   .styledPara {
     font-size: 1.5rem;
   }
@@ -90,10 +87,7 @@
   }
 }
 
-
-
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .desktopNavHeader {
     display: none;
   }
@@ -101,37 +95,40 @@
   .home .mobileContainer {
     display: block;
   }
-  
+
   .mobileMenuIcon i:hover,
   .mobileMenuIcon i:focus {
-    color: $apricot;
+    color: #faba63;
   }
-  
+}
+
+@media (max-width: 480px) {
   header .h1Container {
     margin-top: 200px;
     height: 60%;
     width: 60%;
-    .nameStart,
-    .nameEnd {
-      font-size: 8rem;
-      line-height: 140px;
-    }
-    h1 {
-      font-size: 2rem;
-    }
+  }
+
+  header .h1Container .nameStart,
+  header .h1Container .nameEnd {
+    font-size: 8rem;
+    line-height: 140px;
+  }
+
+  header .h1Container h1 {
+    font-size: 2rem;
   }
 
   .socialMedia {
     display: none;
   }
 
-  
-/*  Main  */
+  /*  Main  */
   h2 {
     text-align: center;
     font-size: 3.3rem;
   }
-  
+
   .about .flexContainer {
     flex-direction: column;
     .imgContainer {
@@ -150,7 +147,7 @@
     }
   }
 
-/*  Gallery  */
+  /*  Gallery  */
   .latest {
     padding: 40px 0;
     .collectionContainer {
@@ -161,8 +158,8 @@
       }
     }
   }
-  
-/*  Icons  */
+
+  /*  Icons  */
   .icons .flexContainer {
     flex-direction: column;
     justify-content: space-between;
@@ -171,7 +168,7 @@
     }
   }
 
-/*  Blog  */
+  /*  Blog  */
   .blogEntry,
   .blogEntry:last-of-type {
     flex-direction: column-reverse;
@@ -183,7 +180,7 @@
     }
   }
 
-/*  Contact  */
+  /*  Contact  */
   .contact {
     .bottomNav ul {
       display: flex;
@@ -197,7 +194,7 @@
       }
     }
   }
-  
+
   .submitContainer {
     flex-direction: column;
   }
